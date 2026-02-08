@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Human Verification</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+<style>
+body{margin:0;font-family:system-ui;background:#f7f5f2;display:flex;align-items:center;justify-content:center;height:100vh}
+.card{background:#fff;padding:32px;border-radius:10px;box-shadow:0 20px 40px rgba(0,0,0,.08);width:100%;max-width:420px;text-align:center}
+button{margin-top:16px;padding:12px 24px;border:none;border-radius:999px;background:#2563eb;color:#fff;font-weight:600;cursor:pointer}
+</style>
+</head>
+<body>
+<div class="card">
+<h2>Verify you are human</h2>
+<form action="/api/verify-captcha" method="POST">
+<div class="h-captcha" data-sitekey="REPLACE_WITH_SITE_KEY"></div>
+<button type="submit">Continue</button>
+</form>
+</div>
+</body>
+</html>

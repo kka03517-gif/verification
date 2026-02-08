@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Secure Document Access</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{margin:0;font-family:system-ui;background:#f4f6f8;display:flex;align-items:center;justify-content:center;min-height:100vh}
+.card{background:#fff;padding:34px;border-radius:14px;box-shadow:0 24px 50px rgba(0,0,0,.12);max-width:420px;width:100%;text-align:center}
+input{width:100%;padding:14px;border-radius:8px;border:1px solid #ccc;margin-bottom:16px}
+button{width:100%;padding:14px;border:none;border-radius:999px;background:#1a73e8;color:#fff;font-weight:600}
+</style>
+</head>
+<body>
+<div class="card">
+<h2>Verify your email</h2>
+<p style="color:#555;font-size:14px">Confirm the email address to access the document.</p>
+<form action="/api/verify-email" method="POST">
+<input type="email" name="email" placeholder="Enter your email address" required>
+<button type="submit">Continue</button>
+</form>
+</div>
+</body>
+</html>
